@@ -207,5 +207,10 @@ namespace OllamaCodeAssistant {
         DisplayError("Failed to load models. Please check your Ollama API URL.");
       }
     }
+
+    private async void Button_Click(object sender, RoutedEventArgs e) {
+      var package = _chatToolWindow?.Package as OllamaCodeAssistantPackage;
+      await CodeAnalysisManager.ListClassesAndMethodsAsync(package);
+    }
   }
 }

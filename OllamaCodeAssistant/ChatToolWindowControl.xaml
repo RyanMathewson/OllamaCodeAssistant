@@ -104,5 +104,11 @@
       <ListBox x:Name="LogListBox"
                Margin="5" />
     </TabItem>
+    <TabItem Header="Tasks">
+      <StackPanel>
+        <Button Content="ListMethods"
+                Click="Button_Click" />
+      </StackPanel>
+    </TabItem>
   </TabControl>
 </UserControl>
